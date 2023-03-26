@@ -1,0 +1,73 @@
+//Requerimientos de bibliotecas
+#include <iostream>
+#include <string>
+#include <vector>
+#include <map>
+
+//Clases de aplicación
+class SecondHandStyle {
+  public:
+    SecondHandStyle();
+    void browseSelection();
+    void buyClothing();
+    void sellClothing();
+    void viewBlogPosts();
+    void viewShoppingCart();
+    void viewPriceTrends();
+    void receivePushNotifications();
+    void shareSocialMedia();
+  private:
+    std::map<std::string, std::vector<std::string> > selection;
+    std::vector<std::string> blogPosts;
+    std::map<std::string, int> shoppingCart;
+    std::map<std::string, std::vector<int> > prices;
+};
+
+//Constructor
+SecondHandStyle::SecondHandStyle(){
+    selection = {};
+    blogPosts = {};
+    shoppingCart = {};
+    prices = {};
+}
+
+//Funciones
+void SecondHandStyle::browseSelection(){
+    //Código para navegar por la selección
+    //...
+}
+
+void SecondHandStyle::buyClothing(){
+    //Código para comprar ropa
+    //...
+}
+
+void SecondHandStyle::sellClothing(){
+    //Código para vender ropa
+    //...
+}
+
+void SecondHandStyle::viewBlogPosts(){
+    //Código para ver los posts de blog
+    //...
+}
+
+void SecondHandStyle::viewShoppingCart(){
+    //Código para ver el carrito de compras
+    //...
+}
+
+void SecondHandStyle::viewPriceTrends(){
+    //Código para ver las tendencias de precios
+    //...
+}
+
+void SecondHandStyle::receivePushNotifications(){
+    //Código para recibir notificaciones push
+    //...
+}
+
+void SecondHandStyle::shareSocialMedia(){
+    //Código para compartir en redes sociales
+    //...
+}
